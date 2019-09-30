@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Welcome To Gleamy Canvas</title>
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  
+  <link href="css/comments.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+		
+		<li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="hacks.html">Hacks</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="clients.html">Clients</a>
+          </li>
+		  
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="remarks.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+    <!-- END header -->
+    
+    <section class="home-slider-loop-false  inner-page owl-carousel">
+      <div class="slider-item" style="background-image: url('img/pexels-photo-2072156.jpeg');">
+        
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-8 text-center col-sm-12 element-animate">
+              <h1></h1>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- create tourist place form -->
+	
+	<div style="padding: 60px 0">
+  </div>
+	
+
+    <section class="section element-animate">
+	 <div class="clearfix mb-5 pb-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 text-center heading-wrap">
+              <h2>Ask Me Anything!</h2>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     <div id="add-new-div">
+        <h2 class="add-new-title" id="name-new-title"> Add Your Comments</h2>
+        <div class="row" >
+            <div class="col-lbl">
+                <label for="name" class="input-lbl"> Name:</label>
+            </div>
+            <div class="col-txt">
+                <input type="text" id="name" class="input-txt" name="name">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lbl">
+                <label for="address" class="input-lbl"> Email</label>
+            </div>
+            <div class="col-txt">
+                <input type="text" id="address" class="input-txt" name="address">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lbl">
+                <label for="rating" class="input-lbl"> Comment Here</label>
+            </div>
+			 <div class="col-txt">
+                <input type="text" id="rating" class="input-txt" name="rating">
+            </div>
+            
+        </div>
+
+        
+
+        <div class="row" id="submit-div" >
+            <button class="add-new-reset" style="float:right"  onclick="addPlace()"> Submit</button>
+			<button class="add-new-reset"  style="float:right" onclick="resetForm()"> Reset</button>
+			<button class="add-new-reset"  style="float:right"  onclick="logout()">Logout</button>
+			 
+        </div>
+		
+        <div>
+            <a class="back" href="#" onclick="showTable()">Your Comments</a>
+        </div> 
+		</div>
+		
+
+
+
+     <div id="tour-places-div">
+        <table class="tablePlace" id="table-places">
+            <thead>
+                <tr>
+                    <th class="name-col name-col-header">NAME</th>
+                    <th class="address-col">ADDRESS</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="table-places-tbody">
+                
+            </tbody>
+
+        </table>
+        <input type="button" value="back to comment section" class="backButton" onclick="BackToaddPlace()">
+
+
+        
+    </div>
+	
+	</section>
+
+    
+	 
+       
+   
+
+
+
+
+
+
+
+
+
+  
+  <div style="padding: 200px 0">
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <!-- Footer -->
+  <footer class="bg-light py-5">
+    <div class="container">
+    
+    </div>
+  </footer>
+  
+  
+  
+  <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+  <script src="js/remarks.js"></script>
+  <script src="js/login.js"></script>
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
