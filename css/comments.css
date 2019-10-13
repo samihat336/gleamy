@@ -68,6 +68,10 @@ body {
   color: #343a40;
   text-align: left;
   background-color: #fff;
+   background-image: url("../img/bg1.jpg");
+   background-attachment: fixed;
+  background-size: cover;
+  background-repeat: repeat-y;
 }
 
 [tabindex="-1"]:focus {

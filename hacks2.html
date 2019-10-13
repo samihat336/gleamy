@@ -21,36 +21,39 @@
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
   <!-- Theme CSS - Includes Bootstrap -->
-  <link href="css/hacks2.css" rel="stylesheet">
+  <link href="css/hacks.css" rel="stylesheet">
+  <link href="css/one-page-wonder.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
       
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+        <ul class="navbar-nav ml-auto">
 		<li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="hacks.html">Hacks</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="clients.html">Clients</a>
+            <a class="nav-link" href="hacks.html">Hacks</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="signup.html">FAQ</a>
+            <a class="nav-link" href="clients.html">Client Gallery</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="demo.html">Login</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" id="contactus" href="remarks.html" style="display:none">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -58,15 +61,16 @@
   </nav>
   
   
-  
-  
+    
+  <div style="padding: 50px 0">
+  </div>
   
  <!-- Page Content -->
 <div class="container">
 
   <!-- Page Heading -->
-  <h1 class="my-4">Hacks
-    <small>Amazing DIY hacks for you</small>
+  <h1 class="my-4">
+    Amazing DIY hacks
   </h1>
 
   <div class="row">
@@ -76,7 +80,7 @@
         <a href="#"><img class="card-img-top" src="img/hack3.jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a href="#">Hack Three</a>
+            <a href="h5.html">Matte Lipstick</a>
           </h4>
           <p class="card-text">Too glossy and patchy lipstick? Just place a tissue paper lightly on your lips and apply some loose powder on it with a fliffy blush. Enjoy your matte lips. </p>
         </div>
@@ -87,13 +91,34 @@
         <a href="#"><img class="card-img-top" src="img/hack4.jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a href="#">Hack Four</a>
+            <a href="h6.html">Avoid stains</a>
           </h4>
           <p class="card-text">Lip paints are for your lips not for your teeth. After applying your favourite lipstick do the most common fingure test. And your teeth are safe.</p>
         </div>
       </div>
     </div>
-  
+     <div class="col-lg-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="img/hack33.jpg" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="h7.html">Leftovers</a>
+          </h4>
+          <p class="card-text">Running out of your favourite lipstick? Take the leftovers out of the lipstick bottle and put it inside a eyeshadow pan. If needed you can melt it as well. Apply it with a lip paint brush.</p>
+        </div>
+      </div>
+    </div>
+	<div class="col-lg-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="img/hack44.jpg" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="h8.html">Broken Lipstick</a>
+          </h4>
+          <p class="card-text">What to do with a broken lipstick?! Place the broken part on your lipstick and heat it with a lighter. Leave it to dry and it is perfectly ready to use.</p>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- /.row -->
 
@@ -109,7 +134,7 @@
 	<p> </p>
   
    
-  <div style="padding: 80px 0">
+  <div style="padding: 10px 0">
   </div>
   
   
@@ -141,15 +166,21 @@
 </div>  
   
   
-  
+    
+  <div style="padding: 10px 0">
+  </div>
   
    <!-- Footer -->
-  <footer class="bg-light py-5">
+   <!-- Footer -->
+   <footer class="py-5 bg-black">
     <div class="container">
-    
+      <p class="m-0 text-center text-white small">Copyright &copy; Gleamy Canvas</p>
     </div>
-  </footer>
-
+	</footer>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	
+	
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -158,9 +189,14 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
-  <script src="js/remarks.js"></script>
+  
+<script src="js/index.js"></script>
 
 </body>
 

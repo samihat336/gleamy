@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +23,7 @@
 
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min.css" rel="stylesheet">
-
+  <link href="css/business-casual.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -49,8 +50,11 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="clients.html">Clients</a>
           </li>
+		   <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="demo.html">Login</a>
+          </li>
 		  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="signup.html">FAQ</a>
+            <a class="nav-link js-scroll-trigger" id="contactus" href="remarks.html" style="display:none">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -81,51 +85,89 @@
     </div>
   </header>
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-<section class="page-section" id="contact">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="page-section">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="mt-0">Let's Get In Touch!</h2>
-          <hr class="divider my-4">
-          <p class="text-muted mb-5"></p>
+      <div class="product-item">
+        <div class="product-item-title d-flex">
+          <div class="bg-faded p-5 d-flex ml-auto rounded">
+            <h2 class="section-heading mb-0">
+              <span class="section-heading-upper">Let,s get acquainted with</span>
+              <a class="section-heading-lower" href="in1.html">Brushes</a>
+            </h2>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-          <div>+08801733224336</div>
-        </div>
-        <div class="col-lg-4 mr-auto text-center">
-          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:contact@yourwebsite.com">samihatislam336@gmail.com</a>
+        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-01.jpg" alt="">
+        <div class="product-item-description d-flex mr-auto">
+          <div class="bg-faded p-5 rounded">
+            <p class="mb-0">Consumers are reporting a number of symptoms from using counterfeit makeup, including eye infections, allergic reactions, skin rashes, swollen lips and chemical burns. In worst cases, the toxic ingredients in many fake makeup products have caused long-term health problems such as high blood pressure and infertility.</p>
+          </div>
         </div>
       </div>
     </div>
-  </section> 
+  </section>
+
+  
+
+  <section class="page-section">
+    <div class="container">
+      <div class="product-item">
+        <div class="product-item-title d-flex">
+          <div class="bg-faded p-5 d-flex ml-auto rounded">
+            <h2 class="section-heading mb-0">
+              <span class="section-heading-upper">say a big no to</span>
+              <a class="section-heading-lower" href="in2.html">Fake products</a>
+            </h2>
+          </div>
+        </div>
+        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-03.jpg" alt="">
+        <div class="product-item-description d-flex mr-auto">
+          <div class="bg-faded p-5 rounded">
+            <p class="mb-0">Consumers are reporting a number of symptoms from using counterfeit makeup, including eye infections, allergic reactions, skin rashes, swollen lips and chemical burns. In worst cases, the toxic ingredients in many fake makeup products have caused long-term health problems such as high blood pressure and infertility.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="page-section">
+    <div class="container">
+      <div class="product-item">
+        <div class="product-item-title d-flex">
+          <div class="bg-faded p-5 d-flex mr-auto rounded">
+            <h2 class="section-heading mb-0">
+              <span class="section-heading-upper">let's talk about</span>
+              <a class="section-heading-lower" href="in3.html">skincare<a>
+            </h2>
+          </div>
+        </div>
+        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-02.jpg" alt="">
+        <div class="product-item-description d-flex ml-auto">
+          <div class="bg-faded p-5 rounded">
+            <p class="mb-0">Proper skin care is crucial and important. That's because, against infection, our skin is the greatest barrier we have. In order to keep this barrier healthy and strong, we need to know how to keep our skin moist and healthy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+ 
  
  
  
@@ -138,11 +180,13 @@
   
 
   <!-- Footer -->
-  <footer class="bg-light py-5">
+  <footer class="py-5 bg-black">
     <div class="container">
-     
+      <p class="m-0 text-center text-white small">Copyright &copy; Gleamy Canvas</p>
     </div>
-  </footer>
+	
+	</footer>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -151,9 +195,16 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  
+   <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
 
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
+  
+<script src="js/index.js"></script>
+  
 
 </body>
 

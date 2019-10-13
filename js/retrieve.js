@@ -1,37 +1,76 @@
 
-// Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDxKB2Czj1VPI_yH8QloKq4lrv-9Jjtd0M",
-    authDomain: "gleamy-30042.firebaseapp.com",
-    databaseURL: "https://gleamy-30042.firebaseio.com",
-    projectId: "gleamy-30042",
-    storageBucket: "gleamy-30042.appspot.com",
-    messagingSenderId: "643180606419",
-    appId: "1:643180606419:web:9b34b39ccf6e019caa7526"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  
 
-$(document).ready(function(){//will start working right after the page is loaded
+const auth = firebase.auth();
 
-  var rootRef=firebase.database().ref().child("messages");
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    console.log(user.uid);
+    if (user.uid == "EgMHdH6jAjUiwv0CPC5bCvshQNc2") {
+      document.getElementById('message_table').style.display = 'block';
+      document.getElementById('message_section').style.display = 'none';
+      createTable();
+    } else {
+      document.getElementById('message_table').style.display = 'none';
+      document.getElementById('message_section').style.display = 'block';
+    }
+  } else {
+    document.location.href = "./index.html?invalid_action_from_inbox";
+  }
+});
 
-
-  rootRef.on("child_added", snap => {
-
-    //alert(snap.val()); //to check if the code works..nothing fancy
-
-    var name=  snap.child("name").val();
-    var email=  snap.child("address").val();
-
-    $("#write_ere").append(`<p>`+ email + `</p>` + `<p>` + name + `</p>` );
+document.getElementById('submit').addEventListener('click', e => {
+  e.preventDefault();
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('emailaddress').value;
+  var comment = document.getElementById('comment').value;
+  ref = "messages";
+  var messageRef = firebase.database().ref(ref);
+  var newRef = messageRef.push();
+  newRef.set({
+    'name': name,
+    'email': email,
+    'comment': comment
+	
+	
   });
-
+  
+  document.getElementById("add-new-div").reset();
+  window.alert("Your message has been sent to the admin");
 
 });
 
-
-function logout(){
+function logout() {
   firebase.auth().signOut();
+}
+
+function createTable() {
+  var table = document.getElementById('table_body');
+
+  var ref = "messages";
+  var emailsRef = firebase.database().ref(ref);
+
+  emailsRef.on('value', data => {
+    var alldata = data.val();
+    var keys = Object.keys(alldata);
+
+    for (var i = 0; i < keys.length; i++) {
+      var index = keys[i];
+      var row = table.insertRow();
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      var cell3 = row.insertCell(2);
+      cell1.innerHTML = alldata[index].name;
+      cell2.innerHTML = alldata[index].email;
+      cell3.innerHTML = alldata[index].comment;
+    }
+  }, errEmailsData);
+}
+
+function errEmailsData(err) {
+  console.log("Error!! id: ");
+  console.log(err);
+}
+
+function resetForm() {
+  document.getElementById("add-new-div").reset();
 }

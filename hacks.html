@@ -22,38 +22,39 @@
 
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/hacks.css" rel="stylesheet">
+  <link href="css/one-page-wonder.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
       
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+        <ul class="navbar-nav ml-auto">
 		<li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="hacks.html">Hacks</a>
+            <a class="nav-link" href="hacks.html">Hacks</a>
           </li>
-          
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="clients.html">Clients</a>
-          </li>
-		  
 		  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="signup.html">FAQ</a>
+            <a class="nav-link" href="clients.html">Client Gallery</a>
           </li>
-		  
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="demo.html">Login</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" id="contactus" href="remarks.html" style="display:none">Contact Us</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -61,14 +62,16 @@
   
   
   
-  
-  
+  <div style="padding: 50px 0">
+  </div>
+   
+   
  <!-- Page Content -->
 <div class="container">
 
   <!-- Page Heading -->
-  <h1 class="my-4">Hacks
-    <small>Amazing DIY hacks for you</small>
+  <h1 class="my-4">
+    Amazing DIY hacks
   </h1>
 
   <div class="row">
@@ -78,7 +81,7 @@
         <a href="#"><img class="card-img-top" src="img/hack1.jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a href="#">Hack One</a>
+            <a href="h2.html">Outlining</a>
           </h4>
           <p class="card-text"> At first draw an outline of your desired eyeliner style keeping your eyes OPEN.then slowly fill in the gaps and you're done. A perfect eyeliner will make your day more beautiful. </p>
         </div>
@@ -89,9 +92,31 @@
         <a href="#"><img class="card-img-top" src="img/hack2.jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a href="#">Hack Two</a>
+            <a href="h1.html">Sello Tape</a>
           </h4>
           <p class="card-text">Wanna have a perfect winged eyeliner? Yes,doing perfect winged eyeliner is not a tough jod if you have sellotapes. Just place the tape according to your desired anlge. Draw and fill in.</p>
+        </div>
+      </div>
+    </div>
+	<div class="col-lg-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="img/hack11.jpg" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="h3.html">Bobby Pin</a>
+          </h4>
+          <p class="card-text">A bobby pin can really help you to a perfect winged eyeliner. Just colour the sharp edge of a bobby pin with your favourite eyeliner. Use the coloured bobbpy pin edge as an eyeliner wing stamp and you're good to go!</p>
+        </div>
+      </div>
+    </div>
+	<div class="col-lg-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="img/hack22.jpg" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="h4.html">Spoon</a>
+          </h4>
+          <p class="card-text">Place a spoon at the corner of your eyes and draw the wing outline according your choice. Lastly fill the outlines and your perfectly perfect winged eyeliner is ready.</p>
         </div>
       </div>
     </div>
@@ -126,7 +151,7 @@
 
 
 
-  <div style="padding: 80px 0">
+  <div style="padding: 10px 0">
   </div>
   
  
@@ -159,29 +184,19 @@
 </div>
 <!-- /.container --> 
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+<div style="padding: 10px 0">
+  </div>
   
   
    <!-- Footer -->
-  <footer class="bg-light py-5">
+   <footer class="py-5 bg-black">
     <div class="container">
-    
+      <p class="m-0 text-center text-white small">Copyright &copy; Gleamy Canvas</p>
     </div>
-  </footer>
+	</footer>
+	
+	<script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -190,9 +205,13 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
+   
+<script src="js/index.js"></script>
   
 </body>
 

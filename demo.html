@@ -22,6 +22,7 @@
 
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.css" rel="stylesheet">
+  <link href="css/one-page-wonder.css" rel="stylesheet">
   <link href="css/demo.css" rel="stylesheet">
   
 
@@ -30,60 +31,124 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
-      
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0">
-		<li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="hacks.html">Hacks
-			</a>
+            <a class="nav-link" href="hacks.html">Hacks</a>
           </li>
-         
-         
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="clients.html">Clients</a>
+            <a class="nav-link" href="clients.html">Client Gallery</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="signup.html">FAQ</a>
+            <a class="nav-link js-scroll-trigger" href="demo.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contactus" href="remarks.html" style="display:none">Contact Us</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
   
  <div id="login_div" class="main-div">
-    <h3>Login to your Account here!</h3>
+    <h1 align="center">Login to your Account</h1>
+	 <div style="padding: 20px 0">
+  </div>
     <input type="email" placeholder="Email..." id="email_field" />
     <input type="password" placeholder="Password..." id="password_field" />
 
     <button onclick="login()">Login to Account</button>
+	  <div style="padding: 10px 0">
+  </div>
+	<button onclick="hello()">Back</button>
 	<p></p>
-	<p align="center">or</p>
-	<a class="d-block text-center mt-2 small" href="signup.html">Back</a>
+	
 
 
   </div>
 
   <div id="user_div" class="loggedin-div">
-    <h3>Welcome User</h3>
+    <h1>Welcome</h1>
 	<p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
-	<p></p>
-	<p></p>
-	<p></p>
-	<p></p>
-	<p></p>
-	<a class="d-block text-center mt-2 small" href="remarks.html">QUERIES ?</a>
-    
+	<section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-5">
+                <span class="section-heading-upper">Come On In</span>
+                <span class="section-heading-lower">We're Open</span>
+              </h2>
+              <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Sunday
+                  <span class="ml-auto">Closed</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Monday
+                  <span class="ml-auto">7:00 AM to 8:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Tuesday
+                  <span class="ml-auto">7:00 AM to 8:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Wednesday
+                  <span class="ml-auto">7:00 AM to 8:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Thursday
+                  <span class="ml-auto">7:00 AM to 8:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Friday
+                  <span class="ml-auto">7:00 AM to 8:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Saturday
+                  <span class="ml-auto">9:00 AM to 5:00 PM</span>
+                </li>
+              </ul>
+              <p class="address mb-5">
+                <em>
+                  <strong>1116 Orchard Street</strong>
+                  <br>
+                  Golden Valley, Minnesota
+                </em>
+              </p>
+              <p class="mb-0">
+                <small>
+                  <em>Call Anytime</em>
+                </small>
+                <br>
+                (317) 585-8468
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	
+	<button onclick="rotnoMota()">Inbox</button>
+	
+    <div style="padding: 10px 0">
+  </div>
+  
 	 <button onclick="logout()">Logout</button>
 	
 	
@@ -93,43 +158,21 @@
 
 
 
-
-
-
-
-
-
- 
-  <div style="padding: 100px 0">
+  <div style="padding: 50px 0">
   </div>
   
-  
-  
  <!-- Footer -->
-  <footer class="bg-light py-5">
+  <footer class="py-5 bg-black">
     <div class="container">
-      
+      <p class="m-0 text-center text-white small">Copyright &copy; Gleamy Canvas</p>
     </div>
-  </footer>
-
+	
+	</footer>
 
 <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
-<script>
-  var firebaseConfig = {
-    apiKey: "AIzaSyDxKB2Czj1VPI_yH8QloKq4lrv-9Jjtd0M",
-    authDomain: "gleamy-30042.firebaseapp.com",
-    databaseURL: "https://gleamy-30042.firebaseio.com",
-    projectId: "gleamy-30042",
-    storageBucket: "gleamy-30042.appspot.com",
-    messagingSenderId: "643180606419",
-    appId: "1:643180606419:web:9b34b39ccf6e019caa7526"
-  };
-  
-  firebase.initializeApp(firebaseConfig);
-  
-</script>
+
 
 
   <!-- Bootstrap core JavaScript -->
@@ -140,11 +183,14 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/creative.min.js"></script> 
+  <script src="js/creative.min.js"></script>
+  <script src="js/index.js"></script>  
   <script src="js/login.js"></script>
+  <script src="js/common.js"></script> 
+  
   
 </body>
 

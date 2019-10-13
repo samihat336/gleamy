@@ -22,40 +22,47 @@
 
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/clients.css" rel="stylesheet">
-
+  <link href="css/one-page-wonder.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+ <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
       
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+        <ul class="navbar-nav ml-auto">
 		<li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="hacks.html">Hacks</a>
-          </li>
-         
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="clients.html">Clients</a>
+            <a class="nav-link" href="hacks.html">Hacks</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="signup.html">FAQ</a>
+            <a class="nav-link" href="clients.html">Client Gallery</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="demo.html">Login</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" id="contactus" href="remarks.html" style="display:none">Contact Us</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  
+  
+  
+  <div style="padding: 50px 0">
+  </div>
 
   
 
@@ -149,34 +156,16 @@
 </div>
 <!-- /.container -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <!-- Footer -->
-  <footer class="bg-light py-5">
+<!-- Footer -->
+ <footer class="py-5 bg-black">
     <div class="container">
-      
+      <p class="m-0 text-center text-white small">Copyright &copy; Gleamy Canvas</p>
     </div>
-  </footer>
+	</footer>
+	
 
+ <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -184,11 +173,16 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
-  <script src="js/remarks.js"></script>
+ 
+<script src="js/index.js"></script>
 
 </body>
+
+
 
 </html>

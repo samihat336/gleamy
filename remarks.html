@@ -21,197 +21,143 @@
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
   <!-- Theme CSS - Includes Bootstrap -->
-  
-  <link href="css/comments.css" rel="stylesheet">
 
+  <link href="css/comments.css" rel="stylesheet">
+  <link href="css/one-page-wonder.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
-      
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0">
-		
-		<li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="hacks.html">Hacks</a>
+            <a class="nav-link" href="hacks.html">Hacks</a>
           </li>
-         
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="clients.html">Clients</a>
+            <a class="nav-link" href="clients.html">Client Gallery</a>
           </li>
-		  
 		  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="remarks.html">FAQ</a>
+            <a class="nav-link js-scroll-trigger" href="demo.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contactus" href="remarks.html" style="display:none">Contact Us</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  
-  
-  
-  
-  
-  
-  
-  
 
 
-    <!-- END header -->
-    
-    <section class="home-slider-loop-false  inner-page owl-carousel">
-      <div class="slider-item" style="background-image: url('img/pexels-photo-2072156.jpeg');">
-        
-        <div class="container">
-          <div class="row slider-text align-items-center justify-content-center">
-            <div class="col-md-8 text-center col-sm-12 element-animate">
-              <h1></h1>
-              
-            </div>
-          </div>
-        </div>
 
-      </div>
-
-    </section>
-
-    <!-- create tourist place form -->
-	
-	<div style="padding: 60px 0">
+  <div style="padding: 50px 0">
   </div>
-	
 
-    <section class="section element-animate">
-	 <div class="clearfix mb-5 pb-5">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12 text-center heading-wrap">
-              <h2>Ask Me Anything!</h2>
-            
-            </div>
+  <!-- END header -->
+
+  <section class="home-slider-loop-false  inner-page owl-carousel">
+    <div class="slider-item" style="background-image: url('img/pexels-photo-2072156.jpeg');">
+
+      <div class="container">
+        <div class="row slider-text align-items-center justify-content-center">
+          <div class="col-md-8 text-center col-sm-12 element-animate">
+            <h1></h1>
+
           </div>
         </div>
       </div>
-      
-     <div id="add-new-div">
-        <h2 class="add-new-title" id="name-new-title"> Add Your Comments</h2>
-        <div class="row" >
-            <div class="col-lbl">
-                <label for="name" class="input-lbl"> Name:</label>
-            </div>
-            <div class="col-txt">
-                <input type="text" id="name" class="input-txt" name="name">
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-lbl">
-                <label for="address" class="input-lbl"> Email</label>
-            </div>
-            <div class="col-txt">
-                <input type="text" id="address" class="input-txt" name="address">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lbl">
-                <label for="rating" class="input-lbl"> Comment Here</label>
-            </div>
-			 <div class="col-txt">
-                <input type="text" id="rating" class="input-txt" name="rating">
-            </div>
-            
-        </div>
-
-        
-
-        <div class="row" id="submit-div" >
-            <button class="add-new-reset" style="float:right"  onclick="addPlace()"> Submit</button>
-			<button class="add-new-reset"  style="float:right" onclick="resetForm()"> Reset</button>
-			<button class="add-new-reset"  style="float:right"  onclick="logout()">Logout</button>
-			 
-        </div>
-		
-        <div>
-            <a class="back" href="#" onclick="showTable()">Your Comments</a>
-        </div> 
-		</div>
-		
-
-
-
-     <div id="tour-places-div">
-        <table class="tablePlace" id="table-places">
-            <thead>
-                <tr>
-                    <th class="name-col name-col-header">NAME</th>
-                    <th class="address-col">ADDRESS</th>
-                    
-                </tr>
-            </thead>
-            <tbody id="table-places-tbody">
-                
-            </tbody>
-
-        </table>
-        <input type="button" value="back to comment section" class="backButton" onclick="BackToaddPlace()">
-
-
-        
     </div>
-	
-	</section>
 
-    
-	 
-       
-   
+  </section>
+
+  <!-- create tourist place form -->
 
 
+  <section class="section element-animate" id="message_section">
+    <div class="clearfix mb-5 pb-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center heading-wrap">
+            <h2>Ask Me Anything!</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form id="add-new-div">
+      <h2 class="add-new-title" id="name-new-title"> Add Your Comments</h2>
+      <div class="row">
+        <div class="col-lbl">
+          <label for="name" class="input-lbl"> Name:</label>
+        </div>
+        <div class="col-txt">
+          <input type="text" id="name" class="input-txt" name="name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lbl">
+          <label for="address" class="input-lbl"> Email</label>
+        </div>
+        <div class="col-txt">
+          <input type="text" id="emailaddress" class="input-txt" name="address">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lbl">
+          <label for="rating" class="input-lbl"> Comment Here</label>
+        </div>
+        <div class="col-txt">
+          <input type="text" id="comment" class="input-txt" name="rating">
+        </div>
+      </div>
+      <div class="row" id="submit-div">
+        <button class="add-new-reset" style="float:right" id="submit"> Submit</button>
+        <button class="add-new-reset" style="float:right" onclick="resetForm()"> Reset</button>
+        
+      </div>
+    </form>
+  </section>
 
-
-
-
-
-
-
-  
+  <table id="message_table" class="table table-bordered" id="dataTable" width="90%" cellspacing="0"
+    style="margin-top:30px;">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Comment</th>
+      </tr>
+    </thead>
+    <tbody id="table_body">
+    </tbody>
+  </table>
+  <button class="add-new-reset" style="float:right" onclick="logout()">Logout</button>
   <div style="padding: 200px 0">
   </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-   <!-- Footer -->
-  <footer class="bg-light py-5">
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
     <div class="container">
-    
+      <p class="m-0 text-center text-white small">Copyright &copy; Gleamy Canvas</p>
     </div>
   </footer>
-  
-  
-  
+
+
   <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
 
   <!-- Bootstrap core JavaScript -->
@@ -222,24 +168,13 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-
-  <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
-  <script src="js/remarks.js"></script>
-  <script src="js/login.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/retrieve.js"></script>
   
+
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
